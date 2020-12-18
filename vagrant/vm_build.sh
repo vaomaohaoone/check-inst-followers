@@ -63,8 +63,8 @@ function install_utils {
 function run_application {
   echo "Run application..."
 	vagrant ssh -c 'git clone https://github.com/vaomaohaoone/check-inst-followers.git'
-	vagrant ssh -c 'mvn clean package -f ./check-inst-followers/app/pom.xml'
-	vagrant ssh -c 'nohup java -jar ./check-inst-followers/app/target/inst-followers-0.0.1-SNAPSHOT.jar > inst-followers-app.log & sleep 2'
+	vagrant ssh -c 'mvn clean install -f ./check-inst-followers/app/pom.xml'
+	vagrant ssh -c 'nohup java -jar ./check-inst-followers/app/target/inst-followers-0.0.1-SNAPSHOT.jar > inst-followers-app.log & sleep 20'
 }
 
 
