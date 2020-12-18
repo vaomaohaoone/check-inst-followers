@@ -75,7 +75,6 @@ function init_vm {
 	vagrant ssh -c 'sudo apt -y install openjdk-8-jdk'
 	install_utils
 	install_elk
-  install_maven
 	echo "Virtual machine successfully configured"
 }
 

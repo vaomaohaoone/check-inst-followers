@@ -13,7 +13,7 @@
                 </PooledItemSourceFactory>
             </JacksonJsonLayout>
             <AsyncBatchDelivery batchSize="2000" deliveryInterval="5000">
-                <IndexTemplate name="inst-followers-template" path="classpath:indexTemplate.json" />
+                <IndexTemplate name="inst-followers-template" path="classpath:BOOT-INF/classes/indexTemplate.json" />
                 <JestBufferedHttp serverUris="http://0.0.0.0:9200"
                                   connTimeout="500"
                                   readTimeout="30000"
