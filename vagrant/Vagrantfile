@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
   end
   config.vm.provision "shell", inline: <<-SHELL
         echo "export INSTAGRAM_LOGIN='******'" >> /etc/profile.d/insta.sh
-        echo "export INSTAGRAM_LOGIN='******'" >> /etc/profile.d/insta.sh
+        echo "export INSTAGRAM_PASSWORD='******'" >> /etc/profile.d/insta.sh
         echo "export BATCH_COUNT='100'" >> /etc/profile.d/insta.sh
         echo "export BATCH_INTERVAL='3000'" >> /etc/profile.d/insta.sh
   SHELL
