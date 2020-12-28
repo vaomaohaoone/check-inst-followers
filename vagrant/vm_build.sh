@@ -26,6 +26,7 @@ function deploy_vm {
 	mkdir ~/$vm_dir
 	cd ~/$vm_dir
 	cp $pwd/config/Vagrantfile ~/$vm_dir #копируем конфиг для виртуальной машины
+	cp -rf $pwd/config/elasticsearch ~/$vm_dir #копируем файлы эластика и кибаны
 	echo "Virtual machine successfully created"
 }
 
